@@ -1,12 +1,10 @@
 'use strict';
 
 var Braintree42 = require('../index.js').factory;
-var GatewayError = require('42-cent-base').GatewayError;
 var CreditCard = require('42-cent-model').CreditCard;
 var Prospect = require('42-cent-model').Prospect;
 var assert = require('assert');
 var casual = require('casual');
-var assign = require('object-assign');
 
 
 var prospect = new Prospect()
@@ -62,7 +60,12 @@ describe('Braintree adaptor', function () {
   var service;
 
   beforeEach(function () {
-    service = Braintree42(process.env.MERCHANT_ID, process.env.PUBLIC_KEY, process.env.PRIVATE_KEY, {testMode: true});
+    service = Braintree42({
+      MERCHANT_ID: process.env.MERCHANT_ID,
+      PUBLIC_KEY: process.env.PUBLIC_KEY,
+      PRIVATE_KEY: process.env.PRIVATE_KEY,
+      testMode: true
+    });
   });
 
   describe('Service', function () {
