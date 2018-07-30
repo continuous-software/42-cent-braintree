@@ -1,10 +1,8 @@
-[![Build Status](https://travis-ci.org/continuous-software/42-cent-braintree.svg?branch=master)](https://travis-ci.org/continuous-software/42-cent-braintree)
+[![Build Status](https://travis-ci.org/continuous-software/42-cent-braintree.svg?branch=master)](https://travis-ci.org/continuous-software/42-cent-braintree) [![Greenkeeper badge](https://badges.greenkeeper.io/continuous-software/42-cent-braintree.svg)](https://greenkeeper.io/)
 
 ![42-cent-braintree](http://upload.wikimedia.org/wikipedia/commons/9/93/Braintree_logo_small.png)
 
 ## Installation ##
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/continuous-software/42-cent-braintree.svg)](https://greenkeeper.io/)
 
     $ npm install -s 42-cent-braintree
 
